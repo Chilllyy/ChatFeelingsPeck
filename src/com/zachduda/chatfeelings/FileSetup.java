@@ -387,6 +387,9 @@ public class FileSetup {
         setMsgs("Command_Descriptions.Wave", "Say frewell, and wave aideu. How elegant!");
         setMsgs("Command_Descriptions.Welcomeback", "Give a warm welcome-back to returning players!");
         setMsgs("Command_Descriptions.Boop", "Boop someone right on their nose!");
+        setMsgs("Command_Descriptions.Peck", "Peck a player like the bird you are!");
+        setMsgs("Command_Descriptions.Bonk", "Bonk somebody else, they probably deserve");
+        setMsgs("Command_Descriptions.Sneeze", "Sneeze on somebody, chilly beware...");
         setMsgsVersion(12);
 
         if (!emotesfile.exists() || !emotes.contains("Version")) {
@@ -725,6 +728,40 @@ public class FileSetup {
         setEmotes("Feelings.Boop.Sounds.Sound2.Name", "None");
         setEmotesDouble("Feelings.Boop.Sounds.Sound2.Volume", 0.0);
         setEmotesDouble("Feelings.Boop.Sounds.Sound2.Pitch", 0.0);
+
+        setEmotesBoolean("Feelings.Peck.Enable", true);
+        setEmotes("Feelings.Peck.Msgs.Sender", "&7You Violently Peck &a&l%player%&r&7!");
+        setEmotes("Feelings.Peck.Msgs.Target", "&7You are Violently Pecked by &a&L%player%&r&7!");
+        setEmotes("Feelings.Peck.Msgs.Target", "&7With all their might, you are packed by &a&l%player%&r&7!");
+        setEmotes("Feelings.Peck.Msgs.Global", "&a&l%target% &r&7was violently pecked by &a&l%sender%&r&7!");
+        setEmotes("Feelings.Peck.Sounds.Sound1.Name", "ENTITY.PARROT.HURT");
+        setEmotesDouble("Feelings.Peck.Sounds.Sound1.Volume", 2.0);
+        setEmotesDouble("Feelings.Peck.Sounds.Sound1.Pitch", 1.0);
+        setEmotes("Feelings.Peck.Sounds.Sound2.Name", "ENTITY.PARROT.DEATH");
+        setEmotesDouble("Feelings.Peck.Sounds.Sound2.Volume", 2.0);
+        setEmotesDouble("Feelings.Peck.Sounds.Sound2.Pitch", 1.0);
+
+        setEmotesBoolean("Feelings.Bonk.Enable", true);
+        setEmotes("Feelings.Bonk.Msgs.Sender", "&7You Bonk &a&l%player%&r&7! on the head!");
+        setEmotes("Feelings.Bonk.Msgs.Target", "&7You get Bonked by &a&L%player%&r&7 with a baseball bat!");
+        setEmotes("Feelings.Bonk.Msgs.Global", "&a&l%target% &r&7was bonked on the head by &a&l%sender%&r&7!");
+        setEmotes("Feelings.Bonk.Sounds.Sound1.Name", "ENTITY.SHULKER.HURT");
+        setEmotesDouble("Feelings.Bonk.Sounds.Sound1.Volume", 0.3);
+        setEmotesDouble("Feelings.Bonk.Sounds.Sound1.Pitch", 1.0);
+        setEmotes("Feelings.Bonk.Sounds.Sound2.Name", "ENTITY.PIG.STEP");
+        setEmotesDouble("Feelings.Bonk.Sounds.Sound2.Volume", 2.0);
+        setEmotesDouble("Feelings.Bonk.Sounds.Sound2.Pitch", 0.0);
+
+        setEmotesBoolean("Feelings.Sneeze.Enable", true);
+        setEmotes("Feelings.Sneeze.Msgs.Sender", "&7You sneeze violently on &a&l%player%&r&7, you hear chilly scream in the distance");
+        setEmotes("Feelings.Sneeze.Msgs.Target", "&a&L%player%&r&7 Sneezes on you!");
+        setEmotes("Feelings.Sneeze.Msgs.Global", "&a&l%target% &r&7was sneezed on by &a&l%sender%&r&7!");
+        setEmotes("Feelings.Sneeze.Sounds.Sound1.Name", "ENTITY.GHAST.SCREAM");
+        setEmotesDouble("Feelings.Sneeze.Sounds.Sound1.Volume", 0.3);
+        setEmotesDouble("Feelings.Sneeze.Sounds.Sound1.Pitch", 1.0);
+        setEmotes("Feelings.Sneeze.Sounds.Sound2.Name", "ENTITY.PANDA.SNEEZE");
+        setEmotesDouble("Feelings.Sneeze.Sounds.Sound2.Volume", 0.5);
+        setEmotesDouble("Feelings.Sneeze.Sounds.Sound2.Pitch", 1.0);
 
         setEmotesVersion(7);
         reloadFiles();

@@ -65,7 +65,10 @@ public class Main extends JavaPlugin implements Listener, TabExecutor {
             "sus",
             "wave",
             "welcomeback",
-            "boop"
+            "boop",
+            "peck",
+            "bonk",
+            "sneeze"
         );
 
     private boolean hasess = false;

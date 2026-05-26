@@ -70,6 +70,12 @@ public class Particles {
                 } else if(label.equalsIgnoreCase("boop")) {
                     // resuse
                     dabParticle(p);
+                } else if(label.equalsIgnoreCase("peck")) {
+                    // No particle
+                } else if (label.equalsIgnoreCase("bonk")) {
+                    // No particle
+                } else if (label.equalsIgnoreCase("sneeze")) {
+                    // No particle
                 } else {
                     plugin.getLogger().warning("Couldn't find Particle for: /" + label);
                 }

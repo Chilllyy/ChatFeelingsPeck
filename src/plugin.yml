@@ -2,7 +2,7 @@ name: ChatFeelings
 main: com.zachduda.chatfeelings.Main
 website: https://zachduda.com/chatfeelings
 authors: [zach_attack]
-version: 4.15-B94
+version: 4.15-B94-chilly
 api-version: 1.13
 softdepend: [Essentials, VanishNoPacket, LiteBans, AdvancedBan, PlaceholderAPI]
 description: Allow your players to show their love, or hatred, with unique emotes!
@@ -61,6 +61,12 @@ commands:
     description: Give a warm welcome-back to returning players!
   boop:
     description: Boop someone right on their nose!
+  peck:
+    description: Peck a player like the bird you are!
+  bonk:
+    description: Bonk your friends for being silly
+  sneeze:
+    description: Sneeze your heart out! careful using this around Chilly
 permissions:
   chatfeelings.*:
     description: Allows all ChatFeelings emotes, commands, including administrative actions.
@@ -98,6 +104,9 @@ permissions:
       chatfeelings.wave: true
       chatfeelings.welcomeback: true
       chatfeelings.boop: true
+      chatfeelings.peck: true
+      chatfeelings.bonk: true
+      chatfeelings.sneeze: true
   chatfeelings.hug:
     default: true
   chatfeelings.slap:
@@ -141,6 +150,12 @@ permissions:
   chatfeelings.welcomeback:
     default: true
   chatfeelings.boop:
+    default: true
+  chatfeelings.peck:
+    default: true
+  chatfeelings.bonk:
+    default: true
+  chatfeelings.sneeze:
     default: true
   chatfeelings.admin:
     default: op
